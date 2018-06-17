@@ -2,7 +2,27 @@ body {
     background-image: url("../images/darkness/darkness.png");
 }
 
-div {
+.quiz {
     color: white;
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
+    opacity: 0.55;
+    width: 900px;
+    padding: 25px 40px;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
