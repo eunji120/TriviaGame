@@ -5,29 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
     <title>Trivia Game</title>
 </head>
 <body>
 <div class="quiz">
+<header>
     <h1>Totally Trivial Trivia!</h1>
+</header>
 
-    <h2>Time Remaining: </h2>
+    <p id="timer">Time Remaining:</p>
 
-    <h4>Question 1</h4>
+<section>
+    <div id="results"></div>
+    <form name="quizForm" onsubmit="return submitAnswers()">
 
-    <h4>Question 2</h4>
+        <h4>1. Where would you go if you wanted to see a whale?</h4>
 
-    <h4>Question 3</h4>
+        <input type="radio" name="q1" value="a" id="q1a"> Alberta<br>
+        <input type="radio" name="q2" value="b" id="q2a"> British Columbia<br>
+        <input type="radio" name="q3" value="c" id="q3a"> Saskatchewan<br>
 
-    <h4>Question 4</h4>
+        <!-- british columbia-->
 
-    <h4>Question 5</h4>
+        <h4>2. "Mr." means "Mister", and "BC" stands for "British Columbia." What does "CBC" stand for?</h4>
 
-    <h4>Question 6</h4>
+        <input type="radio" name="q1" value="a" id="q1a"> Canadian Broadcasting Corporation<br>
+        <input type="radio" name="q2" value="b" id="q2a"> Council for Broadcasters for Canada<br>
+        <input type="radio" name="q3" value="c" id="q3a"> Canada's Broadcasting Company<br>
+        <!-- Canadian Broadcasting Corporation-->
+    
+        <h4>3. Name Canada's highest mountain.</h4>
+        
+        <input type="radio" name="q1" value="a" id="q1a"> Mount Logan, Yukon<br>
+        <input type="radio" name="q2" value="b" id="q2a"> Mont Tremblant, Quebec<br>
+        <input type="radio" name="q3" value="c" id="q3a"> Whistler Mountain, BC<br>
+        <!-- Mount Logan, Yukon -->
+    
+        <h4>4. Name Canada's longest river.</h4>
+
+        <input type="radio" name="q1" value="a" id="q1a"> The St. Lawrence River<br>
+        <input type="radio" name="q2" value="b" id="q2a"> The Ottawa River<br>
+        <input type="radio" name="q3" value="c" id="q3a"> The Mackenzie River (NWT)<br>
+        <!-- the Mackenzie River (NWT) (A)-->
+    
+        <h4>5. Name Canada's four Atlantic provinces.</h4>
+
+        <input type="radio" name="q1" value="a" id="q1a"> Alberta<br>
+        <input type="radio" name="q2" value="b" id="q2a"> British Columbia<br>
+        <input type="radio" name="q3" value="c" id="q3a"> Saskatchewan<br>
+        <!-- Newfoundland, Quebec, Prince Edward Island, Nova Scotia; Quebec, New Brunswick, Prince Edward Island, Nova Scotia; Newfoundland, New Brunswick, Prince Edward Island, Nova Scotia (A)-->
+    
+        <h4>6. What is the capital of Saskatchewan?</h4>
+
+        <input type="radio" name="q1" value="a" id="q1a"> Alberta<br>
+        <input type="radio" name="q2" value="b" id="q2a"> British Columbia<br>
+        <input type="radio" name="q3" value="c" id="q3a"> Saskatchewan<br>
+        <!-- Regina (A), Saskatoon, Edmonton-->
+        <br><br>
+
+        <input type="submit" value="Submit Answers">
+    </form>
+</section>
 
 </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/javascript/app.js"></script>
 </body>
 </html>
