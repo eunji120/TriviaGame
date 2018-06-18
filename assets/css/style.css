@@ -1,15 +1,19 @@
 body {
-    background-image: url("../images/darkness/darkness.png");
+    background-image: url("../images/canada.jpg");
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
 }
 
 .quiz {
-    color: white;
+    color: black;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: aquamarine;
-    opacity: 0.55;
+    background-color: white;
+    opacity: 0.65;
     width: 900px;
     padding: 25px 40px;
 }
@@ -22,7 +26,10 @@ h1 {
 
 #timer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 h4 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
 }
