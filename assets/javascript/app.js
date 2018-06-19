@@ -62,7 +62,6 @@ function setup() {
     setInterval(timeIt, 1000);
 }
 
-//set up start button
 //set up submitAnswers function
 function submitAnswers() {
     var total = 6;
@@ -95,7 +94,7 @@ function submitAnswers() {
         }
     }
 
-    //Display results
+    //Display results on separate page
     var results = document.getElementById('results');
     results.innerHTML = '<h3>You scored <span>' + score + '</span> out of <span>' + total + '</span></h3>';
     
@@ -103,5 +102,3 @@ function submitAnswers() {
     
 }
 
-//set up Finish button
-//directs to the results page
