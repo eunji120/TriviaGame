@@ -2,6 +2,46 @@
 var counter = 0;
 var timeleft = 95;
 
+//the timer starts as soon as the page loads
+window.onload = function() {
+    $("#timer").on("click", stopwatch.recordLap);
+    $("#start").on("click", stopwatch.start);
+    $("#submit").on("click", stopwatch.stop);
+};
+
+$("#display").text("01:35");
+$("#timer").text("");
+
+// var intervalId;
+// var clockRunning = false;
+
+// var stopwatch = {
+//     time: 0,
+//     lap: 1,
+
+//     reset: function() {
+//         stopwatch.time = 0;
+//         stopwatch.lap = 1;
+
+//         $("#display").text("01:35");
+//         $("#timer").text("");
+//     },
+//     start: function() {
+//         if (!clockRunning) {
+//             intervalId = setInterval(stopwatch.count, 1000);
+//             clockRunning = true;
+//         }
+//     },
+//     stop: function() {
+//         clearInterval(intervalId);
+//         clockRunning = false;
+//     },
+//     recordLap: function() {
+//         var converted = stopwatch.timeConverter(stopwatch.time);
+
+//     }
+// }
+
 function convertSeconds(s) {
     var min = floor(s / 60);
     var sec = s % 60;
