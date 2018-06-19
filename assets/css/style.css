@@ -33,3 +33,20 @@ h4 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
 }
+
+#submit {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#results h3 {
+    background-image: url("../images/canada.jpg");
+    color: white;
+    padding: 10px;
+}
+
+#results span {
+    color: white;
+    font-weight: bold;
+}
