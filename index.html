@@ -15,9 +15,10 @@
     <h1>Totally Trivial Trivia!</h1>
 </header>
 
+<div id="game">
     <button id="start">Start</button>
 
-    <p id="timer" "display">Time Remaining: 01:35</p>
+    <p id="remaining-time">Time Remaining: <span id="timer"></span></p>
 
 <section>
     <div id="results"></div>
@@ -69,8 +70,13 @@
 
         <input type="submit" value="Submit" id="submit">
     </form>
+
+    <div>
+        <div id="results"></div>
+    </div>
 </section>
 
+</div>
 </div>
 </body>
 </html>
